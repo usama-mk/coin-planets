@@ -1,9 +1,15 @@
 import React from 'react'
-import underGroundCOnt from '../assets/foreground-underground-continuation.png'
+import underGroundCont from '../assets/foreground-underground-continuation.png'
+import '../index.css'
 
 function Underground() {
   return (
-    <div>Underground</div>
+    <div className='rela'>
+        <div className="undergroundBG ">
+        <img src={underGroundCont} alt="" />
+
+        </div>
+    </div>
   )
 }
 
