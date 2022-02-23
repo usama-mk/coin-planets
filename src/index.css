@@ -30,11 +30,11 @@ html {
 
 .CPIntro{
   background-image: url('/src/assets/foreground-underground-continuation.png');
-  height: 200px;
   max-width: 100vw;
-  background-position: center; 
-  background-repeat: no-repeat;  
-  background-size: cover; 
+  background-repeat:  repeat;  
+  background-size: contain; 
+  height: 100vh;
+  margin-top: -2rem;
 }
 
 /* .undergroundBG{
