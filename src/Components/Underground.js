@@ -1,12 +1,25 @@
 import React from 'react'
 import underGroundCont from '../assets/foreground-underground-continuation.png'
 import '../index.css'
+import CPIntro from './CPIntro'
+import Mint from './Mint'
 
 function Underground() {
   return (
-    <div className='rela'>
-        <div className="undergroundBG ">
-        <img src={underGroundCont} alt="" />
+    <div className='relative top-20'>
+        <div className="undergroundBG absolute top-0">
+        <img className='' src={underGroundCont} alt="" />
+
+       <div className="underContainer absolute top-0 w-full text-center">
+       <div className="underTitle  text-white ">
+        MINT YOUR COIN PLANT!
+        </div>
+        <div className="mintWrapper w-full flex justify-center">
+        <Mint/>
+        </div>
+
+        <CPIntro/>
+       </div>
 
         </div>
     </div>
