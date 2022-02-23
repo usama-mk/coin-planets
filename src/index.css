@@ -27,7 +27,7 @@ html {
 ::-webkit-scrollbar-thumb {
   background: #FF0000;
 }
-/* 
+
 .CPIntro{
   background-image: url('/src/assets/foreground-underground-continuation.png');
   height: 200px;
@@ -35,7 +35,7 @@ html {
   background-position: center; 
   background-repeat: no-repeat;  
   background-size: cover; 
-} */
+}
 
 /* .undergroundBG{
   background-image: url('/src/assets/foreground-underground-continuation.png');

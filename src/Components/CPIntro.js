@@ -2,7 +2,7 @@ import React from 'react'
 
 function CPIntro() {
   return (
-    <div className='flex flex-wrap'>
+    <div className='flex flex-wrap CPIntro'>
         <div className="cpIntroLeft">
             <div className="cplTitle">
             WHAT ARE COIN PLANTS?
