@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import skyBG from "../assets/sky-color.png";
 import clouds from "../assets/horizon-clouds.png";
 import mountains from "../assets/horizon-mountains.png";
@@ -15,58 +15,78 @@ import eegTama from "../assets/eegg-tamagochi1-dirty.png";
 import eegWorm from "../assets/eegg-worm.png";
 import gem6Dirty from "../assets/eegg-gem6-dirty.png";
 import '../index.css'
+import Header from "./Header";
 
 function PageTop() {
+  const [offsetY, setOffsetY] = useState(0);
+  const handleScroll = () => setOffsetY(window.pageYOffset);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    console.log(offsetY)
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [offsetY]);
   return (
     <div className=" PageTop max-w-full overflow-x-hidden">
         {/* relative max-w-full */}
+        {/* <div className="   max-h-[45rem] min-w-full relative bg-fixed bg-no-repeat bg-cover " style={{backgroundImage: `url(${skyBG})`}} alt=""></div> */}
+        {/* <img className="   max-h-[100vh] min-w-full sticky top-0 " src={skyBG} alt="" /> */}
       <div className="topGrouped max-h-full  "> 
-        <img className="   max-h-[45rem] min-w-full max-h-full" src={skyBG} alt="" />
+        <img  style={{ transform: `translateY(-${offsetY * 0.5}px)` }} className="   max-h-[100vh] min-w-full sticky top-0 " src={skyBG} alt="" />
 
         <div className="childrenBGTop absolute top-0">
-          <img className="" src={clouds} alt="" />
-          <img className="h-[400px] min-w-full" src={mountains} alt="" />
+          <Header/>
+          <img style={{ transform:offsetY<2000? `translateY(${offsetY * 0.5}px)`:'' }}   className="mt-7 opacity-70 relative z-0" src={clouds} alt="" />
+          <img   className="h-[400px] min-w-full relative z-10 " src={mountains} alt="" />
 
           <div className="childrenBGTop flex ">
             <img
-              className="object-contain h-min mt-[-5rem] z-20 w-44"
+              className="object-contain h-min mt-[-5rem] z-40 w-44"
               src={bushes}
               alt=""
+              style={{ transform: `-translateY(${offsetY * 0.8}px)` }}
             />
             <img
-              className="object-contain h-min mt-[-8rem] ml-[-3rem] z-10 w-44"
+              className="object-contain h-min mt-[-8rem] ml-[-3rem] z-30 w-44"
               src={rocks}
               alt=""
+              style={{ transform: `-translateY(${offsetY * 0.8}px)` }}
             />
             <img
-              className="object-contain h-min mt-[-26.5rem] ml-[-14rem] w-[31rem]"
+              className="object-contain h-min mt-[-26.5rem] ml-[-14rem] w-[31rem]  z-20 "
               src={tree}
               alt=""
+              style={{ transform: `-translateY(${offsetY * 0.8}px)` }}
             />
             <img
               className="object-contain h-min mt-[-5rem] ml-[-10rem] z-11 w-44"
               src={bushes}
               alt=""
+              style={{ transform: `-translateY(${offsetY * 0.8}px)` }}
             />
             <img
-              className="object-contain h-min mt-[-25rem] ml-[-5rem] z-11 w-[45%]"
+              className="object-contain h-min mt-[-25rem] ml-[-5rem] z-20 w-[45%]"
               src={house}
               alt=""
+              style={{ transform: `-translateY(${offsetY * 0.8}px)` }}
             />
             <img
-              className="object-contain h-min mt-[-5rem] z-20 ml-[-5rem] w-44"
+              className="object-contain h-min mt-[-5rem] z-40 ml-[-5rem] w-44"
               src={bushes}
               alt=""
+              style={{ transform: `-translateY(${offsetY * 0.8}px)` }}
             />
             <img
-              className="object-contain h-min mt-[-8rem] ml-[-3rem] z-10 w-44"
+              className="object-contain h-min mt-[-8rem] ml-[-3rem] z-30 w-44"
               src={rocks}
               alt=""
+              style={{ transform: `-translateY(${offsetY * 0.8}px)` }}
             />
             <img
-              className="object-contain h-min mt-[-27rem] ml-[-20rem] w-[31rem]"
+              className="object-contain h-min mt-[-27rem] ml-[-20rem] w-[31rem] z-20 "
               src={treeTwo}
               alt=""
+              style={{ transform: `-translateY(${offsetY * 0.8}px)` }}
             />
           </div>
           <img src={ground} className="mt-[-2rem] relative z-40" alt="" />

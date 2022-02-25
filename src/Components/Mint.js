@@ -1,15 +1,16 @@
 import React from 'react'
 import mintMid from '../assets/Minting5fps.png'
 import mintSide from '../assets/MintingSmall5fps.png'
+import mintingGif from '../assets/Minting gif.gif'
 
 function Mint() {
   return (
     <div className='Mint  border-8 border-[rgba(244,244,123,1)] rounded-[3rem] bg-[rgba(183,102,95,1)] p-10 w-2/4 drop-shadow-[1px_0px_5px_rgba(244,244,123,1)]'>
         
         <div className="mintItems flex justify-center">
-            <img src={mintSide} className='object-contain w-40' alt="" />
-            <img src={mintMid} className='object-contain w-48' alt="" />
-            <img src={mintSide} className='object-contain w-40' alt="" />
+            <img src={mintingGif} className='object-contain w-40' alt="" />
+            <img src={mintingGif} className='object-contain w-48' alt="" />
+            <img src={mintingGif} className='object-contain w-40' alt="" />
         </div>
 
 
