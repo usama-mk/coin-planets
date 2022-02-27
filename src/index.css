@@ -78,6 +78,21 @@ html {
   margin-top: -2rem;
 } */
 
+.g{
+  height: 530px; /*1200 width*/
+  transition: height 1s;
+}
+
+.g:hover{
+  width: 800px;
+}
+.mountainsBG{
+  background-image: url('/src/assets/horizon-mountains.png');
+  max-width: 100vw;
+  background-repeat:  no-repeat;  
+  background-size: contain; 
+  height: 20vh;
+}
 .CPIntro{
   background-image: url('/src/assets/foreground-underground-continuation.png');
   max-width: 100vw;

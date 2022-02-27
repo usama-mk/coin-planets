@@ -14,7 +14,7 @@ function Mint() {
         </div>
 
 
-        <div className="MIDesc mt-10 text-[20px] font-early ">
+        <div className="MIDesc mt-10 text-[20px] font-early  ">
      
 		<span>Each coin plant costs only </span><span className='text-[#7BD98D]'>0.04 ETH</span><span> DURING THE </span><span className='text-[rgba(255,255,124,1)]' >PRESALE</span><span>.ONLY Whitelisted wallet addresses will be able to mint at this price.</span>
         </div>
