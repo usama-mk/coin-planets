@@ -2,6 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base{
+  @font-face {
+    font-family: "gameboy" ;
+    src: url('../src/assets/fonts/early-gameboy.ttf') format("tff"), url('../src/assets/fonts/early-gameboy.ttf') format("woff")
+  }
+
+  @font-face {
+    font-family: "upheaval" ;
+    src: url('../src/assets/fonts/Extra Font (upheaval tt).ttf') format("tff"), url('../src/assets/fonts/Extra Font (upheaval tt).ttf') format("woff")
+  }
+
+  @font-face {
+    font-family: "title" ;
+    src: url('../src/assets/fonts/Title Font (04B 30).ttf') format("tff"), url('../src/assets/fonts/Title Font (04B 30).ttf') format("woff")
+  }
+}
+
+.font-early{
+  font-family: "gameboy";
+}
+
+.font-upheaval{
+  font-family: "upheaval";
+}
+
+.font-title{
+  font-family: "title";
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

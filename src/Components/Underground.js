@@ -16,12 +16,12 @@ import End from './End'
 
 function Underground() {
   return (
-    <div className='relative '>
-        <div className="undergroundBG ">
-        <img className='' src={underGroundCont} alt="" />
+    <div className='CPIntro relative bottom-0 '>
+        <div className="  undergroundBG ">
+        {/* <img className='' src={underGroundCont} alt="" /> */}
 
        <div className="underContainer absolute top-0 w-full text-center">
-       <div className="underTitle  text-white ">
+       <div className="underTitle  text-white font-title text-[40px] ">
         MINT YOUR COIN PLANT!
         </div>
         <div className="mintWrapper w-full flex justify-center mt-10">

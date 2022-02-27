@@ -8,7 +8,7 @@ function Header() {
 
     const HeaderElement=({name})=>{
         return(
-            <div className="text-white mx-6 text-[24px] relative z-50 cursor-pointer">
+            <div className="text-white mx-6 text-[18px] relative z-50 cursor-pointer font-title">
                 {name}
             </div>
         )
@@ -32,14 +32,15 @@ function Header() {
 
     const ConnectWalletBtn=({buttonName})=>{
         return(
-            <div className="text-center relative z-50 cursor-pointer bg-[rgba(97,32,15,1)] text-[20px] font-[Early GameBoy] text-[rgba(108,189,69,1)] max-h-24 h-14 px-12 py-3 ml-10 rounded-2xl">
-                {buttonName}
+            <div className="flex justify-center align-middle relative z-50 cursor-pointer bg-[rgba(97,32,15,1)] text-[13px] font-[Early GameBoy] text-[rgba(108,189,69,1)] h-14 px-12 py-3 ml-10 rounded-2xl font-early">
+                <span className='mt-[5px]'>{buttonName}</span>
             </div>
         )
     }
   return (
-    <div className='Header absolute top-0 mt-10 mx-12 flex '>
-        <HeaderElement name="ROADMAP" />
+    <div className='Header absolute top-0 mt-10  flex flex-col w-full '>
+      <div className="uppderHead flex justify-evenly">
+      <HeaderElement name="ROADMAP" />
         <HeaderElement name="RARITY" />
         <HeaderElement name="WHITELIST" />
         <HeaderElement name="TEAM" />
@@ -48,6 +49,15 @@ function Header() {
         <HeaderSocialIcon logo={twitter} />
         <HeaderSocialIcon logo={opensea} />
         <ConnectWalletBtn buttonName="Connect wallet" />
+        
+      </div>
+
+      <div className=" relative z-10  "> 
+     <span className=" font-early max-w-[50%] text-[12px] text-center text-[white] ">
+     Coin Plants is an NFT collection of 2500 succulent JPEG’s that will help <br />
+     rebuild our forests!
+     </span>
+      </div>
 
     </div>
   )

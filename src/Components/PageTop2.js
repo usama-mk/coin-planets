@@ -30,12 +30,21 @@ function PageTop2() {
   return (
     <div   className="PageTop skyBG max-w-full overflow-x-clip mb-0">
        <Header/>
+      
        {/* <div className="cloudsImg"> */}
-           <img  style={{ transform: `translateY(${offsetY * 2}px)` }} className='relative z-0'  src={clouds} alt="" />
+           <img  style={{ transform: `translateY(${offsetY * 1.7}px)` }} className='relative z-0 opacity-80'  src={clouds} alt="" />
        {/* </div> */}
        <div   className="site mt-[-380px] relative z-10">
            <img src={site} alt="" />
        </div>
+       <div className="relative" >
+         <img src={underGround} className="mt-[-2rem] z-50" alt="" />
+         <img src={eegGem4} className="absolute top-3 w-20 left-24 z-40  -rotate-[70deg]" alt="" />
+         <img src={eegHodl} className="absolute top-8 w-20 left-14 z-40  rotate-[10deg] " alt="" />
+         <img src={eegTama} className="absolute top-5 w-20 left-[45.5rem] z-40  -rotate-[70deg] " alt="" />
+         <img src={eegWorm} className="absolute top-0 w-16 left-[55.5rem] z-40 rotate-[25deg]" alt="" />
+         <img src={gem6Dirty} className="absolute top-4 w-16 left-[80rem] z-40 rotate-[0deg]" alt="" />
+         </div>
     </div>
   );
 }
