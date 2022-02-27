@@ -16,8 +16,8 @@ import End from './End'
 
 function Underground() {
   return (
-    <div className='relative top-20'>
-        <div className="undergroundBG absolute top-40">
+    <div className='relative '>
+        <div className="undergroundBG ">
         <img className='' src={underGroundCont} alt="" />
 
        <div className="underContainer absolute top-0 w-full text-center">
