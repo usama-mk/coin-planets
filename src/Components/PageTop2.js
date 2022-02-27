@@ -28,12 +28,12 @@ function PageTop2() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [offsetY]);
   return (
-    <div  style={{ transform: `translateY(${offsetY * 0.8}px)` }} className="PageTop skyBG max-w-full overflow-x-clip mb-0">
+    <div   className="PageTop skyBG max-w-full overflow-x-clip mb-0">
        <Header/>
        {/* <div className="cloudsImg"> */}
-           <img  style={{ transform: `translateY(${offsetY * 5}px)` }}  src={clouds} alt="" />
+           <img  style={{ transform: `translateY(${offsetY * 2}px)` }} className='relative z-0'  src={clouds} alt="" />
        {/* </div> */}
-       <div   className="site mt-[-380px]">
+       <div   className="site mt-[-380px] relative z-10">
            <img src={site} alt="" />
        </div>
     </div>
