@@ -32,14 +32,14 @@ function Header() {
 
     const ConnectWalletBtn=({buttonName})=>{
         return(
-            <div className="flex justify-center align-middle relative z-50 cursor-pointer bg-[rgba(97,32,15,1)] text-[13px] font-[Early GameBoy] text-[rgba(108,189,69,1)] h-14 px-12 py-3 ml-10 rounded-2xl font-early">
-                <span className='mt-[5px]'>{buttonName}</span>
+            <div className="flex justify-center align-middle relative z-50 cursor-pointer bg-[rgba(97,32,15,1)] text-[13px] font-[Early GameBoy] text-[rgba(108,189,69,1)] h-14 px-12 py-3 ml-10 rounded-2xl font-early -mt-2">
+                <span className='mt-[6px]'>{buttonName}</span>
             </div>
         )
     }
   return (
     <div className='Header absolute top-0 mt-10  flex flex-col w-full '>
-      <div className="uppderHead flex justify-evenly">
+      <div className="uppderHead flex justify-evenly align-middle h-full">
       <HeaderElement name="ROADMAP" />
         <HeaderElement name="RARITY" />
         <HeaderElement name="WHITELIST" />
@@ -53,7 +53,7 @@ function Header() {
       </div>
 
       <div className=" relative z-10  "> 
-     <span className=" font-early max-w-[50%] text-[12px] text-center text-[white] ">
+     <span className=" font-early max-w-[50%] text-[12px] text-center text-[white] shadow-xl shadow-black ">
      Coin Plants is an NFT collection of 2500 succulent JPEG’s that will help <br />
      rebuild our forests!
      </span>

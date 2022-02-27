@@ -37,9 +37,12 @@ function PageTop3() {
        <div   className="site mt-[-680px] relative z-10 ">
            <div className="" >
                 <img   src={mountains} alt="" style={{height: offsetY>10?600+'px':"", transitionProperty: 'height' , 
-                maxHeight:'680px'
+                maxHeight:'680px',
+                // transform: `-translateY(${offsetY * 0.5}px)`
                 
-            }} className="relative  top-[100vh] z-0 transition ease g" />
+            }} 
+           
+            className="relative  top-[100vh] z-0 transition ease g" />
            </div>
            <img src={site} alt="" className="relative z-10" />
        </div>
