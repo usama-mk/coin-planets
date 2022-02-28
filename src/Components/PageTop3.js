@@ -8,6 +8,7 @@ import tree from "../assets/foreground-tree.png";
 import treeTwo from "../assets/topLeftTree.png";
 import house from "../assets/house.png";
 import ground from "../assets/foreground-ground.png";
+import aniClouds from "../assets/CP_Animated_Clouds.gif";
 import underGround from "../assets/foreground-underground.png";
 import eegGem4 from "../assets/eegg-gem4-dirty.png";
 import eegHodl from "../assets/eegg-hodl.png";
@@ -28,14 +29,14 @@ function PageTop3() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [offsetY]);
   return (
-    <div   className="PageTop skyBG max-w-full overflow-x-clip mb-0">
+    <div   className="PageTop skyBG cloudsGif max-w-full overflow-x-clip mb-0">
        <Header/>
       
        
-           <img  className='relative z-0 opacity-80'  src={clouds} alt="" />
+           <img  className='relative z-0 opacity-0'  src={clouds} alt="" />
     
        <div   className="site mt-[-680px] relative z-10 ">
-           <div className="" >
+           <div className="-mb-10" >
                 <img   src={mountains} alt="" style={{height: offsetY>10?600+'px':"", transitionProperty: 'height' , 
                 maxHeight:'680px',
                 // transform: `-translateY(${offsetY * 0.5}px)`
