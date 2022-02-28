@@ -64,22 +64,11 @@ html {
   max-width: 100vw;
   background-repeat:  no-repeat;  
   background-size: cover; 
-  /* height: 100vh; */
 }
-/* .topGrouped{
-  background-image: url('/src/assets/sky-color.png');
-  position: relative;
-  background-attachment: fixed;
-  background-position: center;
-  max-width: 100vw;
-  background-repeat:  no-repeat;  
-  background-size: cover; 
-  height: 100vh;
-  margin-top: -2rem;
-} */
+
 
 .g{
-  height: 530px; /*1200 width*/
+  height: 530px; 
   transition: height 1s;
 }
 
@@ -119,7 +108,6 @@ html {
   background-size: cover; 
   height: 100%;
   min-height: 25rem;
-  /* margin-top: -2rem; */
 }
 
 .utilityBG{
@@ -128,14 +116,4 @@ html {
   background-size: contain; 
   height: 100%;
   min-height: 25rem;
-  /* margin-top: -2rem; */
 }
-
-/* .undergroundBG{
-  background-image: url('/src/assets/foreground-underground-continuation.png');
-  height: 2px;
-  max-width: 100vw;
-  background-position: center; 
-  background-repeat: no-repeat;  
-  background-size: cover;   
-} */
