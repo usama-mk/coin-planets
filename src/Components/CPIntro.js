@@ -3,7 +3,7 @@ import cpGif from '../assets/CP rotating gif.GIF'
 
 function CPIntro() {
   return (
-    <div className='flex  CPIntro pt-32 p-32'>
+    <div className='flex utilityBG CPIntro pt-32 p-32'>
         <div className="cpIntroLeft">
             <div className="cplTitle text-left text-[2rem] text-white mb-5 font-title">
             WHAT ARE COIN PLANTS?

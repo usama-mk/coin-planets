@@ -1,6 +1,10 @@
 import React from "react";
 import eegWorm from "../assets/eegg-worm.png";
 import car1Dirty from "../assets/eegg-car1-dirty.png";
+import pollen from "../assets/$POLLEN.png";
+import tp from "../assets/1TP x Coin Plants.png";
+import arcade from "../assets/gamefi_arcade.png";
+// import car1Dirty from "../assets/eegg-car1-dirty.png";
 
 function Utility() {
   return (
@@ -23,7 +27,7 @@ function Utility() {
       {/* text left heading */}
       <div className="flex font-early">
         <div className="utilityLeft m-10 w-[100%] relative">
-            <img src={car1Dirty} className='w-32 absolute bottom-[1rem] right-0 z-0 -mr-10 rotate-6 opacity-70' alt="" />
+            <img src={car1Dirty} className='w-32 absolute top-[11rem] right-0 z-0 -mr-10 rotate-6 opacity-50' alt="" />
           <div className="text-left">
             <span className="text-[rgba(255,255,124,1)] text-[15px]">
               {" "}
@@ -54,33 +58,11 @@ function Utility() {
               , and even future generations of Coin Plants.
             </span>
             <br />
-            <span className="text-[rgba(255,255,124,1)] text-[15px]">
-              <br />
-              2. GAMEFI PROJECT IN DEVELOPMENT
-            </span>
-            <br />
-            <span className="text-[rgba(255,255,255,1)] relative z-10">
-              We plan to also incorporate{" "}
-            </span>
-            <span className="font-[`Upheaval TT (BRK)`] text-[23px] tracking-[1px] text-white">
-              $
-            </span>
-            <span className="text-[rgba(255,255,255,1)] relative z-10">
-              POLLEN as the main cryptocurrency for our huge{" "}
-            </span>
-            <span className="text-[#7BD98D] relative z-10">GameFi project</span>
-            <span className="text-[rgba(255,255,255,1)] relative z-10">
-              . This will be a P2E blockchain game where you’ll be able to
-              literally “yield farm” via DeFi in a fun and interactive way, so
-              staking your Coin Plants will give you a head start when we launch
-              this revolutionary game!
-            </span>
-          </div>
-        </div>
-
-        <div className="utilityRight m-10 mr-0 w-[100%]">
-          <div className="text-left mt-1">
-            <span className="text-[rgba(255,255,124,1)] text-[15px]">
+            <div className="mt-48" >
+              <img src={arcade} alt="" />
+            </div>
+            <div className="mt-48">
+            <span className="text-[rgba(255,255,124,1)] text-[15px] ">
               3. VIP ACCESS TO THE TREE HOUSE CLUB
             </span>
             <br />
@@ -104,7 +86,52 @@ function Utility() {
               will only be accessible in the Tree House, so be sure to verify
               your Coin Plant NFT to join!
             </span>
+            </div>
+            
+            
             <br />
+            <div className="mt-48">
+              <img src={tp} alt="tp" />
+            </div>
+          </div>
+        </div>
+{/* right utility */}
+        <div className="utilityRight m-10 mr-0 w-[100%]">
+          <div className="text-left mt-1">
+          <div className="w-[100%] felx justify-center">
+            <img src={pollen} width={250} alt="" />
+          </div>
+            <br />
+
+           <div className="mt-40">
+           <span className="text-[rgba(255,255,124,1)] text-[15px]">
+              <br />
+              2. GAMEFI PROJECT IN DEVELOPMENT
+            </span>
+            <br />
+            <span className="text-[rgba(255,255,255,1)] relative z-10">
+              We plan to also incorporate{" "}
+            </span>
+            <span className="font-[`Upheaval TT (BRK)`] text-[23px] tracking-[1px] text-white">
+              $
+            </span>
+            <span className="text-[rgba(255,255,255,1)] relative z-10">
+              POLLEN as the main cryptocurrency for our huge{" "}
+            </span>
+            <span className="text-[#7BD98D] relative z-10">GameFi project</span>
+            <span className="text-[rgba(255,255,255,1)] relative z-10">
+              . This will be a P2E blockchain game where you’ll be able to
+              literally “yield farm” via DeFi in a fun and interactive way, so
+              staking your Coin Plants will give you a head start when we launch
+              this revolutionary game!
+            </span>
+             </div>
+            <br />
+            <div className="mt-20">
+              <img src={tp} alt="" />
+            </div>
+            <br />
+            <div className="mt-48">
             <span className="text-[rgba(255,255,124,1)] text-[15px] ">
               <br />
               4. COIN PLANTS NFT HELPS GROW IRL TREES!
@@ -116,6 +143,7 @@ function Utility() {
               the power of NFTs, YOU are making a positive impact on our
               environment! The planet can’t thank you enough.
             </span>
+            </div>
           </div>
         </div>
         {/* utility right text end */}
