@@ -33,7 +33,7 @@ function Utility() {
               {" "}
               1. STAKING GENERATES{" "}
             </span>
-            <span className="font-[`Upheaval TT (BRK)`] tracking-[1px] text-[rgba(255,255,124,1)] text-[23px]">
+            <span className="font-[`FarcadeUpheaval TT (BRK)`] tracking-[1px] text-[rgba(255,255,124,1)] text-[23px]">
               $
             </span>
             <span className="text-[rgba(255,255,124,1)] text-[15px]">
@@ -58,7 +58,7 @@ function Utility() {
               , and even future generations of Coin Plants.
             </span>
             <br />
-            <div className="mt-48" >
+            <div className="mt-48 w-full flex justify-center" >
               <img src={arcade} alt="" />
             </div>
             <div className="mt-48">
@@ -90,7 +90,7 @@ function Utility() {
             
             
             <br />
-            <div className="mt-48">
+            <div className="mt-48 w-full flex justify-center">
               <img src={tp} alt="tp" />
             </div>
           </div>
@@ -98,7 +98,7 @@ function Utility() {
 {/* right utility */}
         <div className="utilityRight m-10 mr-0 w-[100%]">
           <div className="text-left mt-1">
-          <div className="w-[100%] felx justify-center">
+          <div className="w-full flex justify-center">
             <img src={pollen} width={250} alt="" />
           </div>
             <br />
@@ -127,7 +127,7 @@ function Utility() {
             </span>
              </div>
             <br />
-            <div className="mt-20">
+            <div className="mt-20 w-full flex justify-center">
               <img src={tp} alt="" />
             </div>
             <br />

@@ -1,5 +1,7 @@
 import React from 'react'
 import cpGif from '../assets/CP rotating gif.GIF'
+import shelf from "../assets/Shelf_CP.png";
+
 
 function CPIntro() {
   return (
@@ -15,8 +17,10 @@ function CPIntro() {
 
         </div>
 
-        <div className="cpGifWrapper mt-auto ml-60 mb-[-2rem]">
-        <img className="w-[90rem] rounded-[3rem]" src={cpGif} alt="" />
+        <div className="cpGifWrapper mt-auto ml-20 mb-auto">
+        {/* <img className="w-[90rem] rounded-[3rem]" src={cpGif} alt="" /> */}
+       <img src={shelf} className='w-[120rem] ' alt="" />
+
         </div>
       
     </div>

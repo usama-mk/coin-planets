@@ -2,9 +2,28 @@ import React from 'react'
 import eegWorm from "../assets/eegg-worm.png";
 import plane3 from "../assets/eegg-plane3-dirty.png";
 import shelf from "../assets/Shelf_CP.png";
+import cpGif from '../assets/CP rotating gif.GIF'
+import commonChart from '../assets/Common chart.png'
+import rareChart from '../assets/Rare chart.png'
+import ultraRare from '../assets/Ultra Rare.png'
+import ucChart from '../assets/Uncommon chart.png'
+
 
 
 function Rarity() {
+
+  const RarityType=({type, image})=>{
+    return(
+      <div className="rarityTy mt-44">
+        <div className="typeHead ml-10 text-white text-left text-[40px]  font-title ">
+          {type}
+          </div>
+          <div className="chart">
+            <img src={image} className={`object-contain w-[500px] ml-11 mt-4 ${type==='UNCOMMON'?'ml-[-50px]':''} `} alt="" />
+            </div>
+        </div>
+    )
+  }
   return (
     <div className="Utility utilityBG p-32 pt-10  ">
     {/* <div className="utilityTopImg flex justify-start w-20">
@@ -27,10 +46,18 @@ function Rarity() {
       </div>
 
       <div className="utilityRight m-10 mr-0 w-[100%]">
-       <img src={shelf} className='mt-[-10rem]' alt="" />
+       {/* <img src={shelf} className='mt-[-10rem]' alt="" /> */}
+       <img className="w-[15rem] ml-[auto] mr-[auto] rounded-[4rem]" src={cpGif} alt="" /> 
       </div>
       {/* utility right text end */}
     </div>
+
+    <div className="rarityTypes flex flex-wrap justify-between">
+      <RarityType type="ULTRA RARE" image={ultraRare} />
+      <RarityType type="RARE" image={rareChart} />
+      <RarityType type="UNCOMMON" image={ucChart} />
+      <RarityType type="COMMON" image={commonChart} />
+      </div>
   </div>
   )
 }

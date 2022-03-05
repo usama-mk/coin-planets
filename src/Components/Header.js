@@ -17,7 +17,7 @@ function Header() {
     const HeaderLogo=({logo})=>{
         return(
             <div className="text-center">
-                <img src={logo} className='w-96 mt-[-2rem] relative z-50' alt="" />
+                <img src={logo} className='w-96 mt-[-2rem] relative z-50 ml-[-45px]' alt="" />
             </div>
         )
     }
@@ -40,15 +40,19 @@ function Header() {
   return (
     <div className='Header absolute top-0 mt-10  flex flex-col w-full '>
       <div className="uppderHead flex justify-evenly align-middle h-full">
+      <div className="leftHeader flex justify-evenly align-middle">
       <HeaderElement name="ROADMAP" />
         <HeaderElement name="RARITY" />
         <HeaderElement name="WHITELIST" />
         <HeaderElement name="TEAM" />
+        </div>
         <HeaderLogo logo={headerLogo} />
+        <div className="rightHeader flex justify-evenly align-middle ">
         <HeaderSocialIcon logo={discord} />
         <HeaderSocialIcon logo={twitter} />
         <HeaderSocialIcon logo={opensea} />
         <ConnectWalletBtn buttonName="Connect wallet" />
+            </div>
         
       </div>
 
@@ -57,6 +61,11 @@ function Header() {
      Coin Plants is an NFT collection of 2500 succulent JPEG’s that will help <br />
      rebuild our forests!
      </span>
+     <div className="btnWrapper flex justify-center mt-5 ">
+       <div className="mintBtn bg-[#7BD98D] text-center px-20 py-4 rounded-2xl drop-shadow-[0_5px_5px_rgba(0,0,0,0.75)] w-fit cursor-pointer text-white font-early">
+            LEARN MORE
+        </div>
+       </div>
       </div>
 
     </div>
