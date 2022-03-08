@@ -4,7 +4,7 @@ import car1Dirty from "../assets/eegg-car1-dirty.png";
 import pollen from "../assets/$POLLEN.png";
 import tp from "../assets/1TP x Coin Plants.png";
 import arcade from "../assets/gamefi_arcade.png";
-// import car1Dirty from "../assets/eegg-car1-dirty.png";
+import treeHouse from "../assets/Tree House.png";
 
 function Utility() {
   return (
@@ -58,10 +58,10 @@ function Utility() {
               , and even future generations of Coin Plants.
             </span>
             <br />
-            <div className="mt-48 w-full flex justify-center" >
-              <img src={arcade} alt="" />
+            <div className="mt-72 w-full flex justify-center" >
+              <img src={arcade} width={250} alt="" />
             </div>
-            <div className="mt-48">
+            <div className="mt-72">
             <span className="text-[rgba(255,255,124,1)] text-[15px] ">
               3. VIP ACCESS TO THE TREE HOUSE CLUB
             </span>
@@ -99,7 +99,7 @@ function Utility() {
         <div className="utilityRight m-10 mr-0 w-[100%]">
           <div className="text-left mt-1">
           <div className="w-full flex justify-center">
-            <img src={pollen} width={250} alt="" />
+            <img src={pollen} width={350} alt="" />
           </div>
             <br />
 
@@ -127,8 +127,8 @@ function Utility() {
             </span>
              </div>
             <br />
-            <div className="mt-20 w-full flex justify-center">
-              <img src={tp} alt="" />
+            <div className="mw-full flex justify-center mt-36">
+              <img src={treeHouse} width={500} alt="" />
             </div>
             <br />
             <div className="mt-48">

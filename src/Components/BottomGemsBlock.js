@@ -7,7 +7,7 @@ function BottomGemsBlock() {
   return (
     <div className='BottomGemsBlock CPIntroBelow'>
         <div className="gemB1 flex justify-end mr-48">
-            <img src={butBitcoin} className='w-20 -rotate-[20deg]' alt="" />
+            <img src={butBitcoin} className='w-20 -rotate-[20deg] absolute top-[3100px]' alt="" />
         </div>
 
         <div className="gemB1 flex justify-end mr-20 mt-28">
@@ -15,7 +15,7 @@ function BottomGemsBlock() {
 
         </div>
         
-        <div className="gemB1 flex justify-start ml-96 mt-5">
+        <div className="gemB1 flex justify-start ml-96 mt-40 mb-[-100px]">
         <img src={gem3} className='w-20 -rotate-[90deg]' alt="" />
 
         </div>

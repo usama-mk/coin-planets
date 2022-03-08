@@ -4,7 +4,7 @@ import dinoSkelly from "../assets/dino-skelly.png";
 
 function End() {
   return (
-    <div className=' End utilityBG flex justify-center pt-48 pb-32' >
+    <div className=' End utilityBG flex justify-center pt-48 pb-56' >
         <img src={dinoSkelly} alt="" />
     </div>
   )

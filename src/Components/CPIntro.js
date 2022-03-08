@@ -1,5 +1,5 @@
 import React from 'react'
-import cpGif from '../assets/CP rotating gif.GIF'
+import rocketDirty from '../assets/eegg-rocket1-dirty.png'
 import shelf from "../assets/Shelf_CP.png";
 
 
@@ -7,6 +7,8 @@ function CPIntro() {
   return (
     <div className='flex utilityBG CPIntro pt-32 p-32'>
         <div className="cpIntroLeft">
+      <img src={rocketDirty} className='ml-[-70px] mb-[-70px]' alt="" />
+
             <div className="cplTitle text-left text-[2rem] text-white mb-5 font-title">
             WHAT ARE COIN PLANTS?
             </div>

@@ -11,6 +11,7 @@ import BottomGemsBlock from './BottomGemsBlock'
 import Rarity from './Rarity'
 import Team from './Team'
 import End from './End'
+import Footer from './Footer'
 
 
 
@@ -33,7 +34,7 @@ function Underground() {
         <CPIntro/>
         {/* mid image wrapper */}
         <div className="wrapperImgCenter CPIntroBelow flex justify-center ">
-        <img className="w-20 rounded-[2rem] object-contain" src={eegDip1} alt="" />
+        <img className="w-20 rounded-[2rem] object-contain  absolute top-[1410px] right-[600px] -rotate-45  " src={eegDip1} alt="" />
         </div>
         {/*  */}
 
@@ -42,6 +43,8 @@ function Underground() {
         <Rarity/>
         <Team/>
         <End/>
+      <Footer/>
+
        </div>
 
         </div>
